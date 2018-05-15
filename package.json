@@ -1,0 +1,18 @@
+{
+  "name": "whorl",
+  "version": "1.0.0",
+  "description": "A simple text spinning DSL",
+  "main": "index.js",
+  "repository": " ",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "jest": "^22.4.3"
+  },
+  "dependencies": {
+    "pluralize": "^7.0.0"
+  }
+}
