@@ -1,4 +1,4 @@
-const defaultFilters = require('./filters');
+import defaultFilters from './filters';
 
 const defaultOptions = {
     dictionary: {},

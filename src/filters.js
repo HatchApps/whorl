@@ -1,12 +1,14 @@
-const pluralize = require('pluralize');
+import pluralize from 'pluralize';
 
 function article(value) {
-    return 'aeiou'.indexOf(value[0]) !== -1 ? `an ${value}` : `a ${value}`;
+    const article = 'aeiou'.indexOf(value[0]) !== -1 ? 'an' : 'a';
+
+    return `${article} ${value}`;
 }
 
-module.exports = {
+export default {
     article,
-    plural: (value) => pluralize(pluralize),
+    plural: (value) => pluralize(value),
     sentence: (value) => `${value[0].toUpperCase()}${value.substring(1)}`,
     uppercase: (value) => value.toUpperCase(),
-}
+};

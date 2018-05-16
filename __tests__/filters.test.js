@@ -1,4 +1,4 @@
-const filters = require('../src/filters');
+import filters from '../src/filters';
 
 test('Uppercase', () => {
     expect(filters.uppercase('test')).toBe('TEST');

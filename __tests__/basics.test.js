@@ -1,4 +1,4 @@
-const Whorl = require('../src');
+import Whorl from '../src';
 
 test('Returns string as is', () => {
     const whorl = new Whorl();
